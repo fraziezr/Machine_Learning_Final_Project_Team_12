@@ -1,6 +1,6 @@
 % testing on new December 2016 price data
 
-dataArray = csvread('coinbase5s.csv');
+dataArray = csvread('condensedCoinbase1minData.csv');
 prices = transpose(dataArray(:,2));
 askVolume = dataArray(:,3);
 bidVolume = dataArray(:,4);
