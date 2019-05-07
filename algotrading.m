@@ -3,7 +3,7 @@ delete('reg.mat') % won't exist on first run
 
 % import prices as column vectors from the csv sheet
 % about 120 000 values
-dataArray = csvread('okcoin5s.csv');
+dataArray = csvread('condensedCoinbase1minData.csv');
 prices = dataArray(:,2);
 askVolume = dataArray(:,3);
 bidVolume = dataArray(:,4);
