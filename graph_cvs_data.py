@@ -19,7 +19,7 @@ times = []
 prices = []
 
 # read csv file
-with open(original_data, 'r') as csvfile:
+with open(new_data, 'r') as csvfile:
     # create the csv reader
     csvreader = csv.reader(csvfile)
 
@@ -30,7 +30,10 @@ with open(original_data, 'r') as csvfile:
 
 plt.plot(times, prices,'r,')
 plt.grid(True)
+plt.title("New Full Data Set")
+plt.xlabel("Price (USD)")
+plt.ylabel("Epoch Time")
 frame1 = plt.gca()
 #frame1.axes.get_xaxis().set_visible(False)
 #frame1.axes.get_yaxis().set_visible(False)
-plt.savefig('original_data_full_graph.png')
+plt.savefig('new_data_full_graph.png')
