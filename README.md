@@ -1,40 +1,35 @@
 # Machine Learning ECE 4824 Final Project Team 12
 ### Authors: Zackery Frazier, Brandon Cheung, and John Zartman
 
-## Original Paper Results
+## Objective
+We attempted to replicate the results described in the paper ["Bayesian regression and Bitcoin"](https://arxiv.org/pdf/1410.1231v1.pdf) by Devavrat Shah and Kang Zhang. 
 
-The paper which we attempted to implement was Bayesian regression and Bitcoin paper
-written by Devavrat Shah and Kang Zhang(https://arxiv.org/pdf/1410.1231v1.pdf). 
-
-We built off of an existing attempted implementation of this paper which was hosted
-on a GitHub repository located at (https://github.com/panditanvita/BTCpredictor).
-
-The paper was about using Bayesian Regression to predict fluctuations in the Bitcoin market.
-
-The implementation of this paper reported that it was able to correctly predict the movement
-of the Bitcoin market approximately 80% of the time.
-
-
-
-## Procedures
-
-In order to try and reproduce the findings of the paper and implementation we used the existing 
-implementation, and trained and tested the model with an updated data set.
-
-Our data set used the same amount of data points as the original paper, 120,000. The two main differences between the data set that we used and the one used in the original paper was the cryptocurrency used to obtain the pricing, and the time interval between data points. In the original paper they pulled their data from the cryptocurrency okcoin, and we used Coinbase. Also, in the original paper there was a five second interval between each of the data points, our data set has one minute between data points. This leads to our data spanning a longer amount of time that the original data set.
+The paper describes Bayesian regression and its effectiveness for predicting variations in
+the price of Bitcoin. 
+Bayesian regression is defined as the utilization of empirical
+data to perform Bayesian inference. Bayesian regression for "latent source
+model", which is described in another report referenced in the paper, is
+utilized for binary classification, but in the paper they attempt to use it to
+predict the value of a Bitcoin. They make a bold claim that the strategy laid
+out in the paper is capable of doubling an investment in less than 60 days when
+run with real data.
 
 
-To produce our data set we pulled price data for coinbase [1]. This data was for every minute from the being of the cryptos life in 2014 through the current day. We then used simple unix commands to grab the last 120,000 lines of the data file. The data set we had contained a lot of information including the pricing data at the opening of the minute and at the closing of the minute. We chose to us the opening prices as our price data point and stayed consistent with that choice through the rest of the experiment.
+## Procedure
+In order to try and reproduce the findings of the paper, we built off of an existing attempted implementation hosted on [Anvita Pandit's GitHub page](https://github.com/panditanvita/BTCpredictor). This implemenatation is reported to correctly predict a price change 80% of the time. We then trained and tested the model with an updated data set. For this project we tried to recreate the results of the implementation of a 1.1% profit and approximately an 80% "win percentage".
 
-The next thing we did was write a short python script to graph both the entire data set of the original paper and our entire data set. This was done so that we could visually see both the data that the program would be training on as well as the data that would be tested on.    
+Our data set used the same amount of data points as the original paper (I.E. 120,000 points). The two main differences between the data set that we used and the one used in the original paper was the cryptocurrency exchange used to obtain the pricing, and the time interval between data points. In the original paper they pulled their data from the cryptocurrency exchange [OKCoin](https://www.okcoin.com/), and we used [Coinbase](https://www.coinbase.com/). Also, in the original paper there was a five second interval between each of the data points, but our data set has one minute between data points. This leads to our data spanning a larger amount of time than the original data set.
+
+
+To produce our data set we pulled [price data from coinbase](https://www.kaggle.com/mczielinski/bitcoin-historical-data). This data was for every minute from the beginning of the crypto's life in 2014 through present day. We then used simple unix commands to grab the last 120,000 lines of the data file. The data contained a lot of information including the pricing data at the opening of the minute and at the closing of the minute. We chose to use the opening prices as our price data point and stayed consistent with that choice through the rest of the experiment.
+
+The next thing we did was write a short python script to graph the entire data set of the original paper and our entire data set. This was done so that we could visually see both the data that the program would be training on as well as the data that would be tested on.    
 
 
 After we obtained and properly formatted the data set we proceeded to run the data set and compared the success rate and profit to the
 original implementation. We were able to surpass the 80% success rate and made a greater profit than the original results.
 
-## Original
-
-### Original Results
+## Original Results
 
 **Figure 1** - Full data set used in the original experiment
 ![Entire Original Data Set](original_data_full_graph.png)
@@ -46,13 +41,7 @@ The red dots were when the program bought Bitcoin, and the green dots are when t
 **Figure 3** - The results from the original experiment
 ![Matlab Results from the original experiment](original_data_results.PNG)
 
-
-
-## Reproduction
-
-For this project we decided that would try to recreate the results of the original paper of having a 1.1% profit and approximately an 80% "win percentage". In our original project proposal we planned to use two year worth of Bitcoin market data at ten minute intervals, and training using the  
-
-### Reproduction Results
+## Reproduction Results
 
 **Figure 4** - Full data set the we used for our experiment
 ![Entire New Data Set](new_data_full_graph.png)
@@ -68,30 +57,29 @@ For this project we decided that would try to recreate the results of the origin
 
 We were able to successfully replicate the finding of the original paper and implementation.
 
-As you can see below in figures 3 and 6 below our new data set was able to perform better
+As can be seen in *Figures 3 and 6* our new data set was able to perform better
 than the original data set. We were able to get a higher success rate, and a higher total
 profit than the was previously available.
 
 We speculate that this was due to the less erratic movement of the Bitcoin market. As you
-can see in figure 1 the original data was highly volatile and seemed to jump almost 
-randomly as the epochs increased. While the new data also has some large jumps it tends to
+can see in *Figure 1* the original data was highly volatile and seemed to jump almost 
+randomly as the epochs increased. While the new data also has some large jumps, it tends to
 be more smooth and generally tended to follow more of a pattern than the previous data, 
-as seen in figure 4 below.
+as seen in *Figure 4*.
 
-It is worth noting however, that the program only attempted a single transaction on the
-new data set. We are currently unaware of this change though this could have to do with
-the changes to Bitcoin in recent months.
-
-
-
+It is worth noting that the program only attempted a single transaction on the
+new data set. We are currently unaware of the cause of this change, but it is hypothesized that it has to do with
+the changes Bitcoin has undergone in recent months.
 
 ### Relevant Papers
 
-While working on this project we read and referenced several papers including Deep Bayesian 
-regression models by Aliaksandr Hubin and Geir Storvik (https://arxiv.org/pdf/1806.02160.pdf) 
-and A Bayesian Perspective of Statistical Machine Learning for Big Data by Rajiv Sambasivan, 
-Sourish Das and Sujit K. Sahu (https://arxiv.org/pdf/1811.04788.pdf)
+While working on this project we read and referenced several papers including ["Deep Bayesian 
+regression models"](https://arxiv.org/pdf/1806.02160.pdf) by Aliaksandr Hubin and Geir Storvik  
+and ["A Bayesian perspective of statistical machine learning for big data"](https://arxiv.org/pdf/1811.04788.pdf) by Rajiv Sambasivan, 
+Sourish Das and Sujit K. Sahu.
 
-### Reference Links
-[1] https://www.kaggle.com/mczielinski/bitcoin-historical-data
+### Sources
+[1] https://arxiv.org/pdf/1410.1231v1.pdf
+[2] https://github.com/panditanvita/BTCpredictor
+[3] https://www.kaggle.com/mczielinski/bitcoin-historical-data
 
