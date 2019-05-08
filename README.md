@@ -79,7 +79,9 @@ and ["A Bayesian perspective of statistical machine learning for big data"](http
 Sourish Das and Sujit K. Sahu.
 
 ### Sources
-[1] https://arxiv.org/pdf/1410.1231v1.pdf
-[2] https://github.com/panditanvita/BTCpredictor
-[3] https://www.kaggle.com/mczielinski/bitcoin-historical-data
+https://arxiv.org/pdf/1410.1231v1.pdf
+
+https://github.com/panditanvita/BTCpredictor
+
+https://www.kaggle.com/mczielinski/bitcoin-historical-data
 
