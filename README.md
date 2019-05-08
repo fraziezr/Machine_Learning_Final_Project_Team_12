@@ -38,6 +38,7 @@ After we obtained and properly formatted the data set we procided to run the dat
 
 **Figure 2** - The resulting graph from the original experiment
 ![Graph of the Original Experiment](original_data_graph.jpg)
+The red dots were when the program bought bitcoin, and the green dots are when the program sold bitcoin.
 
 **Figure 3** - The results from the original experiment
 ![Matlab Results from the original experiment](original_data_results.PNG)
@@ -85,5 +86,8 @@ the fall of bitcoin in recent months.
 
 ### Relevent Papers
 
-While working on this project we read and referenced several papers including...
+While working on this project we read and referenced several papers including Deep Bayesian 
+regression models by Aliaksandr Hubin and Geir Storvik (https://arxiv.org/pdf/1806.02160.pdf) 
+and A Bayesian Perspective of Statistical Machine Learning for Big Data byRajiv Sambasivan, 
+Sourish Das and Sujit K. Sahu (https://arxiv.org/pdf/1811.04788.pdf)
 
