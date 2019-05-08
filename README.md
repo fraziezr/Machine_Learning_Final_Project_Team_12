@@ -21,10 +21,12 @@ of the bitcoin market approximately 80% of the time.
 In order to try and reproduce the findings of the paper and implamentation we used the existing 
 implamention, and trained and tested the model with an updated data set.
 
-Our data set.....
+Our data set used the same amount of data points as the original paper, 120,000. The two main differences between the data set that we used and the one used in the original paper was the cryptocurrecy used to obtain the pricing, and the time interval between data points. In the original paper they pulled there data from the cryptocurrecy okcoin, and we used Coinbase. Also, in the original paper their was a five second interval between each of the data points, our data set has one minute between data points. This leads to our data spanning a longer amount of time that the original data set.
 
 
-We produced this data set by....
+To produce our data set we pulled price data for coinbase [1]. This data was for every minute from the being of the cryptos life in 2014 through the current day. We then used simple unix commands to grab the last 120,000 lines of the data file. The data set we had contained a lot of information including the pricing data at the opening of the minute and at the closing of the minute. We chose to us the opening prices as our price data point and stayed consistant with that choice throught the result of the experiment.
+
+The next thing we did was write a short python script to graph both the entire data set of the original paper and our entire data set. This was done so that we could visually see both the data that the program would be training on as well as the data that would be tested on.    
 
 
 After we obtained and properly formatted the data set we procided to run the data set and...
@@ -90,4 +92,7 @@ While working on this project we read and referenced several papers including De
 regression models by Aliaksandr Hubin and Geir Storvik (https://arxiv.org/pdf/1806.02160.pdf) 
 and A Bayesian Perspective of Statistical Machine Learning for Big Data byRajiv Sambasivan, 
 Sourish Das and Sujit K. Sahu (https://arxiv.org/pdf/1811.04788.pdf)
+
+### Reference Links
+[1] https://www.kaggle.com/mczielinski/bitcoin-historical-data
 
