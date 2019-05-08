@@ -1,7 +1,7 @@
 # Machine Learning ECE 4824 Final Project Team 12
 ### Authors: Zackery Frazier, Brandon Cheung, and John Zartman
 
-### Original Paper Results
+## Original Paper Results
 
 The paper which we attempted to implement was Bayesian regression and Bitcoin paper
 written by Devavrat Shah and Kang Zhang(https://arxiv.org/pdf/1410.1231v1.pdf). 
@@ -16,7 +16,7 @@ of the Bitcoin market approximately 80% of the time.
 
 
 
-### Procedures
+## Procedures
 
 In order to try and reproduce the findings of the paper and implementation we used the existing 
 implementation, and trained and tested the model with an updated data set.
@@ -29,7 +29,8 @@ To produce our data set we pulled price data for coinbase [1]. This data was for
 The next thing we did was write a short python script to graph both the entire data set of the original paper and our entire data set. This was done so that we could visually see both the data that the program would be training on as well as the data that would be tested on.    
 
 
-After we obtained and properly formatted the data set we proceeded to run the data set and...
+After we obtained and properly formatted the data set we proceeded to run the data set and compared the success rate and profit to the
+orignal implementation. We were able to surpass the 80% success rate and made a greater profit than the original results.
 
 ## Original
 
@@ -63,7 +64,7 @@ For this project we decided that would would try to recreate the results of the 
 
 ![Matlab Results from the original experiment](our_data_results.PNG)
 
-### Analysis
+## Analysis
 
 We were able to successfully replicate the finding of the original paper and implementation.
 
@@ -79,9 +80,7 @@ as seen in figure 4 below.
 
 It is worth noting however, that the program only attempted a single transaction on the
 new data set. We are currently unaware of this change though this could have to do with
-the fall of Bitcoin in recent months.
-
-
+the changes to Bitcoin in recent months.
 
 
 
