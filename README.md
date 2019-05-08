@@ -7,7 +7,7 @@ The paper which we attempted to implement was Bayesian regression and Bitcoin pa
 written by Devavrat Shah and Kang Zhang(https://arxiv.org/pdf/1410.1231v1.pdf). 
 
 We built off of an existing attempted implementation of this paper which was hosted
-on a github repository located at (https://github.com/panditanvita/BTCpredictor).
+on a GitHub repository located at (https://github.com/panditanvita/BTCpredictor).
 
 The paper was about using Bayesian Regression to predict fluctuations in the Bitcoin market.
 
@@ -21,7 +21,7 @@ of the Bitcoin market approximately 80% of the time.
 In order to try and reproduce the findings of the paper and implementation we used the existing 
 implementation, and trained and tested the model with an updated data set.
 
-Our data set used the same amount of data points as the original paper, 120,000. The two main differences between the data set that we used and the one used in the original paper was the cryptocurrency used to obtain the pricing, and the time interval between data points. In the original paper they pulled there data from the cryptocurrency okcoin, and we used Coinbase. Also, in the original paper their was a five second interval between each of the data points, our data set has one minute between data points. This leads to our data spanning a longer amount of time that the original data set.
+Our data set used the same amount of data points as the original paper, 120,000. The two main differences between the data set that we used and the one used in the original paper was the cryptocurrency used to obtain the pricing, and the time interval between data points. In the original paper they pulled their data from the cryptocurrency okcoin, and we used Coinbase. Also, in the original paper there was a five second interval between each of the data points, our data set has one minute between data points. This leads to our data spanning a longer amount of time that the original data set.
 
 
 To produce our data set we pulled price data for coinbase [1]. This data was for every minute from the being of the cryptos life in 2014 through the current day. We then used simple unix commands to grab the last 120,000 lines of the data file. The data set we had contained a lot of information including the pricing data at the opening of the minute and at the closing of the minute. We chose to us the opening prices as our price data point and stayed consistent with that choice through the rest of the experiment.
@@ -30,7 +30,7 @@ The next thing we did was write a short python script to graph both the entire d
 
 
 After we obtained and properly formatted the data set we proceeded to run the data set and compared the success rate and profit to the
-orignal implementation. We were able to surpass the 80% success rate and made a greater profit than the original results.
+original implementation. We were able to surpass the 80% success rate and made a greater profit than the original results.
 
 ## Original
 
@@ -50,7 +50,7 @@ The red dots were when the program bought Bitcoin, and the green dots are when t
 
 ## Reproduction
 
-For this project we decided that would would try to recreate the results of the original paper of having a 1.1% profit and approximately an 80% "win percentage". In our original project proposal we planned to use two year worth of Bitcoin market data at ten minute intervals, and training using the  
+For this project we decided that would try to recreate the results of the original paper of having a 1.1% profit and approximately an 80% "win percentage". In our original project proposal we planned to use two year worth of Bitcoin market data at ten minute intervals, and training using the  
 
 ### Reproduction Results
 
@@ -85,11 +85,11 @@ the changes to Bitcoin in recent months.
 
 
 
-### Relevent Papers
+### Relevant Papers
 
 While working on this project we read and referenced several papers including Deep Bayesian 
 regression models by Aliaksandr Hubin and Geir Storvik (https://arxiv.org/pdf/1806.02160.pdf) 
-and A Bayesian Perspective of Statistical Machine Learning for Big Data byRajiv Sambasivan, 
+and A Bayesian Perspective of Statistical Machine Learning for Big Data by Rajiv Sambasivan, 
 Sourish Das and Sujit K. Sahu (https://arxiv.org/pdf/1811.04788.pdf)
 
 ### Reference Links
