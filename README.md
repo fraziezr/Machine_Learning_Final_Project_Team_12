@@ -36,14 +36,14 @@ original implementation. We were able to surpass the 80% success rate and made a
 
 **Figure 2** - The resulting graph from the original experiment
 ![Graph of the Original Experiment](original_data_graph.jpg)
-The red dots were when the program bought Bitcoin, and the green dots are when the program sold Bitcoin.
+The red dots indicate when the program bought Bitcoin and the green dots indicate when the program sold Bitcoin.
 
 **Figure 3** - The results from the original experiment
 ![Matlab Results from the original experiment](original_data_results.PNG)
 
 ## Reproduction Results
 
-**Figure 4** - Full data set the we used for our experiment
+**Figure 4** - Full data set that we used for the new experiment
 ![Entire New Data Set](new_data_full_graph.png)
 
 **Figure 5** - The resulting graph from the new experiment
@@ -51,7 +51,7 @@ The red dots were when the program bought Bitcoin, and the green dots are when t
 
 **Figure 6** - The results from the new experiment
 
-![Matlab Results from the original experiment](our_data_results.PNG)
+![Matlab Results from the new experiment](our_data_results.PNG)
 
 ## Analysis
 
