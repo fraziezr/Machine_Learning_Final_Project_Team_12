@@ -73,6 +73,7 @@ It is hypothesized that this difference could be caused by the drastic change in
 ### Relevant Papers
 
 While working on this project we read and referenced several papers including:
+
 ["Deep Bayesian regression models"](https://arxiv.org/pdf/1806.02160.pdf) by Aliaksandr Hubin and Geir Storvik  
 ["A Bayesian perspective of statistical machine learning for big data"](https://arxiv.org/pdf/1811.04788.pdf) by Rajiv Sambasivan, 
 Sourish Das and Sujit K. Sahu.
